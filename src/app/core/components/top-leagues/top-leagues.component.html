@@ -1,0 +1,10 @@
+@for(item of items; track item.id) {
+<button
+  class="button"
+  [class.button--active]="selectedLeagueId() === item.id"
+  id="{{ item.country }}Select"
+  (click)="selectLeague(item.id)"
+>
+  {{ item.country }}
+</button>
+}

@@ -1,0 +1,27 @@
+:host {
+  display: block;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button--active {
+  text-decoration: underline;
+  color: blue;
+}

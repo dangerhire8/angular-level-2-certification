@@ -1,0 +1,10 @@
+<app-header title="Football updates"></app-header>
+
+@if(standings$ | async; as standings){
+<app-standings [data]="standings"></app-standings>
+} @if(error$ | async; as error){
+
+<div class="error">
+  {{ error }}
+</div>
+}

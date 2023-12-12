@@ -1,0 +1,15 @@
+:host {
+  display: block;
+}
+
+app-header {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.error {
+  background: #fff;
+  color: #f00;
+  padding: 20px;
+  text-align: center;
+}

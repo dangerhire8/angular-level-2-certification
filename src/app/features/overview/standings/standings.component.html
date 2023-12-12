@@ -1,0 +1,28 @@
+<table class="table">
+  <tr>
+    <th></th>
+    <th></th>
+    <th>Name</th>
+    <th>Games</th>
+    <th>W</th>
+    <th>L</th>
+    <th>D</th>
+    <th>Goal Difference</th>
+    <th>Points</th>
+  </tr>
+  @for(team of data; track team.rank; let i = $index){
+  <tr>
+    <td>{{ team.rank }}</td>
+    <td>
+      <img class="team-logo" [src]="team.team.logo" [alt]="team.team.name" />
+    </td>
+    <td class="clickable" [routerLink]="[team.team.id]">{{ team.team.name }}</td>
+    <td>{{ team.all.played }}</td>
+    <td>{{ team.all.win }}</td>
+    <td>{{ team.all.lose }}</td>
+    <td>{{ team.all.draw }}</td>
+    <td>{{ team.goalsDiff }}</td>
+    <td>{{ team.points }}</td>
+  </tr>
+  }
+</table>

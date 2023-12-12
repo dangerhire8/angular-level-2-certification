@@ -1,0 +1,22 @@
+<div class="block">
+  @for(match of matches;track $index){
+  <div class="row">
+    <img
+      class="logo"
+      [src]="match.teams.home.logo"
+      [alt]="match.teams.home.name"
+    />
+    <span>{{ match.teams.home.name }}</span>
+    <span>{{ match.goals.home }}</span>
+    -
+    <span>{{ match.goals.away }}</span>
+    <span>{{ match.teams.away.name }}</span>
+    <img
+      class="logo"
+      [src]="match.teams.away.logo"
+      [alt]="match.teams.home.name"
+    />
+  </div>
+  }
+</div>
+<button routerLink="../">Back</button>
